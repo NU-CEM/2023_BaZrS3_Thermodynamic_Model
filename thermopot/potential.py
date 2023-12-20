@@ -25,7 +25,6 @@ class Potential:
         e.g. reactions.reaction({Ba:1,S:2}, {BaS2:1}},temperature=T,pressure=P).Dmu_eV_pbesol()
         potential_label is the label of the contour colorbar e.g. '$\Delta G_f$ / kJ mol$^{-1}$'
         scale_range is the scale of the colorbar e.g. [-380, -240]
-        filename is the output filename e.g. 'plots/Dmu-BaS2-Ba-S2.png'. If not provided `plt.show()` is called.
         logscale determines if the y-axis Pressure is logarithmic
         """
 
@@ -81,7 +80,5 @@ class Potential:
 
         plt.xlabel("Temperature / {0}".format(x_unitlabel))
         plt.ylabel("Pressure / {0}".format(P_units))
-
-
 
         return plt
